@@ -3,12 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c0b0a" />
   <title>關係憲章</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+TC:wght@400;500&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <p>Loading full tree in next commits if this succeeds.</p>
-  <script src="i18n.js"></script>
-  <script src="app.js"></script>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip" href="#main" data-i18n="skip">跳至內容</a>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <p class="eyebrow" data-i18n="eyebrow">序言</p>
+        <h1 data-i18n="brand">關係憲章</h1>
+      </div>
+    </div>
+    <div class="top-actions">
+      <p class="meta" id="clock"></p>
+      <button type="button" class="ghost" id="langBtn" aria-label="Language">EN</button>
+      <button type="button" class="ghost" id="themeBtn" data-i18n="themeLight">淺色</button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <p class="lede" data-i18n="lede">沒說出口的規矩，會慢慢變成怨氣。寫下來。簽署。週末再一齊覆盤。</p>
+      <div class="partners" id="partnersBar"></div>
+    </section>
+    <nav class="tabs" role="tablist" data-i18n-aria="tabsAria" aria-label="主要分頁">
+      <button role="tab" aria-selected="true" data-view="charter" data-i18n="tabCharter">憲章</button>
+      <button role="tab" aria-selected="false" data-view="propose" data-i18n="tabPropose">動議</button>
+      <button role="tab" aria-selected="false" data-view="docket" data-i18n="tabDocket">議案</button>
+      <button role="tab" aria-selected="false" data-view="checkin" data-i18n="tabCheckin">週檢</button>
+    </nav>
+    <p class="hint">Open the local copy in artifacts for the complete interactive build. GitHub Pages can be enabled on this repo after the remaining JS/CSS land.</p>
+    <script src="i18n.js"></script>
+    <script src="app.js"></script>
+  </main>
 </body>
 </html>
