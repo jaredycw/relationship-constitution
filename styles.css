@@ -1,0 +1,16 @@
+:root {
+  --bg: #0c0b0a;
+  --bg-elev: #141312;
+  --ink: #f3efe6;
+  --ink-dim: #9a9488;
+  --line: rgba(243, 239, 230, 0.12);
+  --accent: #c4a574;
+  --accent-ink: #0c0b0a;
+  --warn: #d98b6a;
+  --ok: #8fad8a;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  --radius: 2px;
+  --serif: "Instrument Serif", "Times New Roman", serif;
+  --sans: "Geist", "Noto Sans TC", "PingFang HK", "Helvetica Neue", system-ui, sans-serif;
+  --mono: "Geist Mono", ui-monospace, monospace;
+}
